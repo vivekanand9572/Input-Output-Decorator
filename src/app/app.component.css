@@ -1,0 +1,46 @@
+.contact-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+
+  .label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .input {
+    width: 330px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: cornsilk;
+  }
+
+  .edit-button {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid blue;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    bottom:25px;
+    left: 1205px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 5px;
+    background-color: bisque;
+    margin: -20px 1px;
+  }
+  

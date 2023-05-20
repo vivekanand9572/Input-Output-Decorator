@@ -1,0 +1,28 @@
+ <app-child [data]="parentName" [data2]="parentPhone" [data3]="parentEmail" (sendMsg)="hii($event)"></app-child>
+ <div *ngFor="let row of rowData; let i = index">
+   <div class="contact-container">
+     <div class="contact-section">
+       <label class="label">Name:</label>
+       <div>
+         <input class="input" type="text" [(ngModel)]="row.name" [readonly]="selectedVariable !== i">
+       </div>
+     </div>
+   
+     <div class="contact-section">
+       <label class="label">Phone:</label>
+       <div>
+         <input class="input" type="text" [(ngModel)]="row.phone" [readonly]="selectedVariable !== i">
+       </div>
+     </div>
+ 
+     <div class="contact-section">
+       <label class="label">Email:</label>
+       <div>
+         <input class="input" type="email" [(ngModel)]="row.email" [readonly]="selectedVariable !== i">
+       </div>
+     </div>
+   </div>
+ 
+   <button class="edit-button" (click)="handleClick(row.name, row.phone, row.email, i)">Edit</button>
+ </div>
+ 
